@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bemidjiben - Remote Technical Consulting</title>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="apple-mobile-web-app-title" content="Bemidjiben">
+    <style>
+        /* Basic Dark Mode Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #1a1a1a; /* Dark background */
+            color: #f0f0f0; /* Light text color */
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            background-color: #2a2a2a; /* Slightly lighter dark background for content */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+        h1, h2, h3 {
+            color: #00bcd4; /* A light blue/cyan for headings */
+            border-bottom: 2px solid #005f6b; /* Darker blue line under headings */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #8affff; /* Lighter blue for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .contact-info {
+            background-color: #3a3a3a;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8em;
+            color: #999;
+        }
+        /* Form Specific Styles - REVISED FOR ALIGNMENT */
+        .contact-form {
+            margin-top: 20px;
+            display: flex; /* Keeps form groups stacked */
+            flex-direction: column;
+            gap: 15px; /* Spacing between each form group */
+            text-align: left; /* Ensure all content within form is left-aligned */
+        }
+        .form-group {
+            width: 100%; /* Ensure each group takes full available width */
+        }
+        .form-group label {
+            display: block; /* Ensures label is on its own line */
+            margin-bottom: 5px; /* Small space below label */
+            font-weight: bold;
+            color: #c0c0c0;
+            text-align: left; /* Explicitly left-align label text */
+            margin-left: 0; /* Override any potential default browser margin */
+            padding-left: 0; /* Override any potential default browser padding */
+        }
+        .form-input,
+        .form-textarea {
+            width: 100%; /* Take full width of parent (.form-group) */
+            padding: 10px;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #333;
+            color: #f0f0f0;
+            box-sizing: border-box; /* Crucial: padding/border included in width */
+            display: block; /* Ensure it behaves as a block and takes full line */
+            font-size: 1em; /* Consistent font size */
+            margin-left: 0; /* Override any potential default browser margin */
+            margin-right: 0; /* Override any potential default browser margin */
+        }
+        .form-textarea {
+            resize: vertical; /* Allow vertical resizing */
+        }
+        .submit-button {
+            background-color: #00bcd4; /* Cyan button */
+            color: #1a1a1a; /* Dark text on button */
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            align-self: flex-start; /* Keeps the button left-aligned if .contact-form is flex */
+        }
+        .submit-button:hover {
+            background-color: #008c9e; /* Darker cyan on hover */
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bemidjiben - Remote Technical Consultant</h1>
+
+        <p>Welcome! I am Ben of Bemidji, a seasoned technical professional specializing in remote support and consultation. With over a decade of experience, I offer expert assistance to individuals and small businesses seeking reliable, efficient, and friendly technical solutions.</p>
+
+        <h2>My Expertise</h2>
+        <p>I bring a broad range of skills to the table, including but not limited to:</p>
+        <ul>
+            <li>**System Administration:** Linux (Ubuntu, Debian), Windows Server, macOS management.</li>
+            <li>**Network Troubleshooting:** Diagnosing and resolving connectivity issues, basic firewalling.</li>
+            <li>**Remote Support:** Efficiently resolving technical problems from anywhere.</li>
+            <li>**Cloud Services:** Basic Azure (like this server!), AWS, Google Cloud familiarity.</li>
+            <li>**Software & Hardware Support:** Guidance on common software issues, hardware recommendations.</li>
+            <li>**Docker & Containerization:** Setup and management of containerized applications (like my self-hosted RustDesk server!).</li>
+            <li>**General IT Consultation:** Advising on best practices, security, and technology adoption.</li>
+        </ul>
+
+        <h2>Why Choose Me?</h2>
+        <ul>
+            <li>**Reliable & Responsive:** I understand the importance of timely technical assistance.</li>
+            <li>**Clear Communication:** I explain complex technical concepts in an easy-to-understand manner.</li>
+            <li>**Problem Solver:** I thrive on finding effective solutions to challenging technical puzzles.</li>
+            <li>**Remote First:** Fully optimized for efficient remote collaboration and support.</li>
+        </ul>
+
+        <h2>Let's Connect</h2>
+        <p>If you're looking for dedicated and experienced remote technical help, I'd be happy to discuss your needs. Please reach out to me via the form below. I aim to respond to all inquiries within one business day.</p>
+
+       <div class="contact-info">
+            <h3>Contact Me Securely</h3>
+            <p>To avoid spam and ensure a secure connection, please use the form below to send me an email. Your email address will <strong>not</strong> be publicly displayed.</p>
+
+            <form action="https://formspree.io/f/meogyynl" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required class="form-input">
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required class="form-textarea"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+
+            <p>I look forward to hearing from you!</p>
+        </div>
+    </div>
+    <div id="weather-widget">
+	<h3>Bemidji Weather</h3>
+	<p id="current-weather">Loading current weather...</p>
+	<canvas id="forecast-chart" width="400" height="200"></canvas>
+	<p style="font-size: 0.8em;">Weather data by <a href="https://open-meteo.com">Open-Meteo</a> (CC BY 4.0).</p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+async function fetchWeather() {
+  const url = 'https://api.open-meteo.com/v1/forecast?latitude=47.4736&longitude=-94.8803&current_weather=true&daily=temperature_2m_max,temperature_2m_min&timezone=America%2FChicago&temperature_unit=fahrenheit';
+  console.log('Fetching weather from:', url);
+  try {
+    const response = await fetch(url);
+    console.log('Fetch response status:', response.status);
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    console.log('Weather data:', data);
+
+    // Display current weather
+    const current = data.current_weather;
+    document.getElementById('current-weather').innerHTML = `
+      Current: ${current.temperature}°F, ${getWeatherDescription(current.weathercode)}
+    `;
+
+    // Create 5-day forecast chart
+    const ctx = document.getElementById('forecast-chart').getContext('2d');
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels: data.daily.time.slice(0, 5),
+        datasets: [
+          {
+            label: 'Max Temp (°F)',
+            data: data.daily.temperature_2m_max.slice(0, 5),
+            borderColor: '#1e88e5',
+            backgroundColor: 'rgba(30, 136, 229, 0.2)',
+            fill: true
+          },
+          {
+            label: 'Min Temp (°F)',
+            data: data.daily.temperature_2m_min.slice(0, 5),
+            borderColor: '#d81b60',
+            backgroundColor: 'rgba(216, 27, 96, 0.2)',
+            fill: true
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: { title: { display: true, text: 'Temperature (°F)' } },
+          x: { title: { display: true, text: 'Date' } }
+        }
+      }
+    });
+  } catch (error) {
+    document.getElementById('current-weather').innerHTML = 'Error loading weather data.';
+    console.error('Fetch error:', error);
+  }
+}
+
+      function getWeatherDescription(code) {
+        const codes = {
+          0: 'Clear sky', 1: 'Mainly clear', 2: 'Partly cloudy', 3: 'Overcast',
+          61: 'Light rain', 63: 'Moderate rain', 80: 'Rain showers'
+        };
+        return codes[code] || 'Unknown';
+      }
+
+      window.onload = fetchWeather;
+    </script>
+
+    <footer>
+        <p>&copy; 2025 Bemidjiben. All rights reserved.</p>
+    </footer>
+</body>
+</html>
